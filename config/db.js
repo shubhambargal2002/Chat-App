@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const colors = require('colors');
 const dotenv = require('dotenv');
+const MONGO_URI = "mongodb+srv://shubham_bargal_2002:ShubhamBargal@cluster0.dcubvkh.mongodb.net/chat-app?retryWrites=true&w=majority"
 dotenv.config();
 const connectDB = async () => {
   try {
