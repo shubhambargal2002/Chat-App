@@ -5,7 +5,11 @@ const MONGO_URI = "mongodb+srv://shubham_bargal_2002:ShubhamBargal@cluster0.dcub
 dotenv.config();
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(MONGO_URI);
+    const conn = await mongoose.connect(MONGO_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useCreateIndex: true 
+    });
 
     console.log(
       `MongoDB Connected: ${conn.connection.host}`.cyan.underline
