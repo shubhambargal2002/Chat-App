@@ -60,7 +60,7 @@ const server = app.listen(
 const io = require('socket.io')(server, {
   pingTimeout: 60000,
   cors: {
-    origin: 'https://starlit-tulumba-d9e91d.netlify.app',
+    origin: 'https://shubham-bargal-chat-app.netlify.app',
     // credentials: true,
   },
 });
