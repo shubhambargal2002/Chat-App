@@ -1,7 +1,8 @@
 const jwt = require("jsonwebtoken");
 const User = require("../models/userModel.js");
 const asyncHandler = require("express-async-handler");
-const JWT_SECRET = "Shubhamisagoodboy@2002"
+// const JWT_SECRET = "Shubhamisagoodboy@2002"
+const JWT_SECRET = process.env.JWT_SECRET
 
 const protect = asyncHandler(async (req, res, next) => {
   let token;
